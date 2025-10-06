@@ -86,7 +86,7 @@ test.describe(
       bugsFormPage,
     }) => {
       await bugsFormPage.expectPageToLoad();
-      await bugsFormPage.shouldDisplayExpectedFormFields;
+      await bugsFormPage.shouldDisplayExpectedFormFields();
       await bugsFormPage.shouldDisplayExpectedFormFieldLabels();
       await bugsFormPage.shouldHaveTermsCheckboxVisibleAndEnabled();
       await bugsFormPage.shouldHaveRegisterButtonDisabledInitially();
